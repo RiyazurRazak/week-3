@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Translator translator = new Translator();
+            Console.WriteLine(translator.PigLatinTranslator("Do you think it is going to rain today?"));
         }
     }
 }
