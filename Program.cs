@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Translator translator = new Translator();
-            Console.WriteLine(translator.PigLatinTranslator("Do you think it is going to rain today?"));
+            Console.WriteLine(translator.PigLatinTranslator("Dont you think"));
         }
     }
 }

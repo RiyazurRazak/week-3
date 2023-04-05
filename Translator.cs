@@ -18,19 +18,26 @@ namespace week_3
 
         public string Translate(string word)
         {
+           
+            bool isUpperCase = Char.IsUpper(word[0]);
+            if (isVowel(word[0])) return word + "yay";
             string translatedWord = "";
-            string endWord = "ay";
-            if (isVowel(word[0])) endWord = "yay";
-            int flag = 0;
-            for(int i=0; i<word.Length; i++) {
+            for (int i=0; i<word.Length; i++) {
                 if (isVowel(word[i])){
-                    translatedWord += word.Substring(i) + word.Substring(0,i) + endWord;
-                    flag = 1;
+                    if (isUpperCase)
+                    {
+                        translatedWord += word.Substring(i, 1).ToUpper() + word.Substring(i+1) + word.Substring(0, i).ToLower() + "ay";
+                    }
+                    else
+                    {
+                        translatedWord += word.Substring(i) + word.Substring(0, i) + "ay";
+                    }
+                    
                     break;
                 }
 
             }
-            return flag == 1 ? translatedWord : word;
+            return translatedWord;
         }
         public string PigLatinTranslator(string messageToTranslate)
         {
