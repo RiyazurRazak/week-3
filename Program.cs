@@ -2,10 +2,12 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void main(string[] args)
         {
-            Translator translator = new Translator();
-            Console.WriteLine(translator.PigLatinTranslator("Dont you think"));
+            //SqlDemo dem0 = new SqlDemo();
+            //dem0.Connect();
+            //Translator translator = new Translator();
+            //Console.WriteLine(translator.PigLatinTranslator("Dont you think"));
         }
     }
 }

@@ -144,7 +144,7 @@ namespace week_3
         {
             return cardSet.Count == 4;
         }
-        public static void Main(string[] args)
+        public static void main(string[] args)
         {
             string[] cards = { "10h", "Jh", "Qh", "Ah", "Kh" };
             // 5-4,9-1
